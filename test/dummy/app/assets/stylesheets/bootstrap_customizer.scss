@@ -1,0 +1,8 @@
+@import 'landing_boi/bootstrap_overrides';
+@import "bootstrap";
+
+@include media-breakpoint-up(md) {
+	.h1 {
+		font-size: 50px;
+	}
+}

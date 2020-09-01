@@ -21,6 +21,12 @@ Or install it yourself as:
 $ gem install landing_boi
 ```
 
+## Custom Styles / Bootstrap Overrides
+
+Customize scss colour scheme by creating `stylesheets/bootstrap_customizer.scss` and importing your own custom styles, then `@import 'bootstrap'`. 
+
+See example in `test/dummy/app/assets/stylesheets`.
+
 ## Contributing
 If you'd like to make a fix / change, please create a pull request; when I have a moment, I'll have a look!
 
