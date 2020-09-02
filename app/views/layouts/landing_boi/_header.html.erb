@@ -1,15 +1,21 @@
-<header class="container my-5">
+<header class="container my-5 pt-4">
 	
 	<div class="row">
-	
-		<div class="col-6 text-left">
-			<%= image_tag(logo_url) %>
-		</div>
 
-		<div class="col-6 text-right">
-			<a href="<%= sign_in_url %>" class='btn btn-light rounded text-secondary'>Sign in
-				<%= fa_icon "long-arrow-right", class: 'pl-1' %>
-			</a>
+		<div class="<%= css[:col_class] %>">
+			
+			<div class="col-6 px-0 text-left d-inline-block">
+				<a href="<%= urls[:logo] %>">
+					<%= image_tag(assets[:logo_path], class: 'grow') %>
+				</a>
+			</div><!--
+
+			--><div class="col-6 px-0 text-right d-inline-block">
+				<a href="<%= urls[:sign_in] %>" class='btn btn-light rounded text-secondary px-3'>Sign in
+					<%= fa_icon "long-arrow-right", class: 'pl-1' %>
+				</a>
+			</div>
+
 		</div>
 	
 	</div>

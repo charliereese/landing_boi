@@ -1,12 +1,23 @@
 <main class="container landing_boi index">
 	
 	<div class="row">
-		
-		<h1 class="col-12 mt-4 h1">
-			Your THING should be ATTR, ATTR, and ATTR
-		</h1>
+
+		<div class="<%= css[:col_class] %>">
+			
+			<%= render 'hero_a' %>
+
+			<%= render 'features' %>
+
+			<%= render 'screenshot' %>
+
+			<%= render 'social_proof' %>
+
+			<div>[FAQs]</div>
+
+			<div>[Pricing / Get Started]</div>
+
+		</div>
 
 	</div>
-
 
 </main>

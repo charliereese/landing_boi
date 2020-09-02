@@ -21,6 +21,10 @@ Or install it yourself as:
 $ gem install landing_boi
 ```
 
+## Configuration Options (e.g. titles / text, logo path, URL paths, etc.)
+
+See `lib/landing_boi` for configuration options.
+
 ## Custom Styles / Bootstrap Overrides
 
 Customize scss colour scheme by creating `stylesheets/bootstrap_customizer.scss` and importing your own custom styles, then `@import 'bootstrap'`. 

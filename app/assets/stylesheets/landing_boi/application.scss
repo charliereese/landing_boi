@@ -1,3 +1,28 @@
 @import '_index';
 @import '_header';
 @import "font-awesome";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap');
+
+.text-inter {
+	font-family: 'Inter', sans-serif;
+}
+
+.py-2_5 {
+	padding-top: 12px !important;
+	padding-bottom: 12px !important;
+}
+
+.grow {
+
+	transition: 0.2s ease;
+	
+	&:hover {
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		transform: scale(1.1);
+		transition: 0.2s ease;
+	}
+
+}

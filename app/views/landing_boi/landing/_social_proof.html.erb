@@ -1,0 +1,42 @@
+<div class="pt-5 social-proof">
+	
+	<h3 class="mt-5 h3 text-inter">
+		PRODUCT is trusted by PEOPLE / BUSINESSES to power their FEATURE.
+	</h3>
+
+	<p class="mb-0 mt-3 text-secondary">
+		We’re also used by GROUP A, GROUP B, and GROUP C, who trust our software to provide them with an ATTR and ATTR alternative to PRODUCT.
+	</p>
+
+	<div class="recommendations">
+		
+		<% text[:recommendations].each_with_index do |reco, idx|
+		
+			%><div class="mt-5 align-top col-12 col-md-6 px-0 <%= idx % 2 == 0 ? 'pr-md-5' : 'pl-md-5' %> d-inline-block">
+
+				<div class="shadow p-4 rounded text-center">
+
+					<p class="mb-0">
+						"<%= raw reco[:text] %>"
+					</p>
+
+					<div class="mt-3">
+						<a href="<%= reco[:url] %>">
+							<%= image_tag(reco[:img_path], class: 'rounded-circle grow') %>	
+						
+							<u class="ml-2">
+								<%= reco[:name] %>
+							</u>
+						</a>
+					</div>
+					
+				</div>
+
+
+			</div><%
+		
+		end %>	
+
+	</div>
+
+</div>

@@ -1,0 +1,21 @@
+<article class="mt-md-5 features">
+
+	<% text[:features].each_with_index do |feature, idx|
+
+		%><div class="mt-5 pt-3 col-12 col-md-6 px-0 <%= idx % 2 == 0 ? 'pr-md-5' : 'pl-md-5' %> d-inline-block">
+
+			<%= image_tag(feature[:img_path], class: 'float-right float-md-none mt-4 mt-md-0 ml-3 ml-md-0 grow') %>
+
+			<h3 class="h5 mt-3 text-inter">
+				<%= raw feature[:title] %>
+			</h3>
+
+			<p class="text-secondary mt-3 mb-0">
+				<%= raw feature[:text] %>
+			</p>
+
+		</div><% 
+
+	end %>
+	
+</article>
