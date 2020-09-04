@@ -1,0 +1,19 @@
+<div class="pt-5">
+	
+	<h3 class="mt-3 mt-md-5 h3 text-inter">
+		Frequently asked questions
+	</h3>
+
+	<% text[:faqs].each do |faq| %>
+
+		<h3 class="h5 mt-4 pt-3 text-inter">
+			<%= faq[:title] %>
+		</h3>
+
+		<p class="text-secondary mt-3 pt-1 mb-0">
+			<%= raw(faq[:text]) %>
+		</p>
+
+	<% end %>
+
+</div>

@@ -1,8 +1,57 @@
-<footer class="container">
-	
+<footer class="container py-3 py-md-5 mb-5">
+
 	<div class="row">
+		<div class="<%= css[:col_class] %>">
+			<div class="bg-light divider rounded mt-4"></div>
+		</div>
+	</div>
 	
-		<div class="col-6 text-left">[FOOTER]</div>
+	<div class="row mt-3 mt-md-5">
+
+		<div class="<%= css[:col_class] %> mt-5">
+			
+			<div class="col-12 col-md-6 px-0 pr-md-5 d-inline-block align-top">
+				
+				<h3 class="h5 text-inter mb-0">
+					<%= raw footer[:product][:name] %>
+					<%= image_tag(assets[:logo_path], class: 'pl-1 logo grow') %>
+				</h3>
+
+				<p class="text-secondary mt-2 mb-0">
+					<%= raw footer[:product][:plug] %>
+				</p>
+
+				<p class="text-secondary mt-2 mb-0">
+					Copyright © <%= Time.now.year %> <%= raw footer[:product][:company] %>
+				</p>
+
+			</div
+
+			><div class="col-12 col-md-6 mt-4 mt-md-0 pt-2 pt-md-0 px-0 d-inline-block px-14 align-top">
+
+				<% footer[:links].each do |key, obj|
+				
+					%><div class="col-<%= 12 / footer[:links].size %> d-inline-block align-top px-0">
+		
+						<h6 class="text-inter mb-0">
+							<%= key.to_s.titleize %>
+						</h6>
+
+						<ul class="p-0">
+							<% obj.each do |text, url| %>
+								<li class="mt-2"><a href="<%= url %>" class="text-secondary">
+									<%= text.to_s.capitalize %>
+								</a></li>
+							<% end %>
+						</ul>
+					
+					</div><%
+
+				end %>
+
+			</div>
+
+		</div>
 	
 	</div>
 

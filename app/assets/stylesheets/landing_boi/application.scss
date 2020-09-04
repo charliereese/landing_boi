@@ -14,6 +14,10 @@
 	padding-bottom: 12px !important;
 }
 
+.px-14 {
+	font-size: 14px;
+}
+
 .grow {
 
 	transition: 0.2s ease;
@@ -25,4 +29,9 @@
 		transition: 0.2s ease;
 	}
 
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
 }

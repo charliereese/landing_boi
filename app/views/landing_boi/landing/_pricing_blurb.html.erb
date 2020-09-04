@@ -1,0 +1,29 @@
+<div class="py-5 mt-3 mt-md-5 pricing-blurb">
+
+	<div class="p-5 shadow rounded">
+		
+		<h3 class="h3 text-inter">
+			<%= raw text[:index][:pricing][:title] %>
+		</h3>
+
+		<%= image_tag(assets[:pricing_img_path], class: 'float-right d-none d-md-inline-block mt-5 ml-3 grow') %>
+
+		<p class="text-secondary mt-3 mb-0">
+			<%= raw text[:index][:pricing][:text] %>
+		</p>
+
+		<div class="mt-5">
+		
+			<a href="<%= urls[:get_started] %>" class="btn btn-primary mt-2 py-2_5 px-4 mr-md-3 d-block d-md-inline-block">
+				<%= text[:buttons][:get_started] %>
+			</a>
+
+			<a href="<%= urls[:demo] %>" class="btn btn-light text-secondary mt-2 py-2_5 px-4 d-block d-md-inline-block">
+				<%= text[:buttons][:demo] %>
+			</a>
+
+		</div>
+
+	</div>
+
+</div>
