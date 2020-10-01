@@ -13,8 +13,10 @@
 			<div class="col-12 col-md-6 px-0 pr-md-5 d-inline-block align-top">
 				
 				<h3 class="h5 text-inter mb-0">
-					<%= raw footer[:product][:name] %>
-					<%= image_tag(assets[:logo_path], class: 'pl-1 logo grow') %>
+					<a href="<%= urls[:logo] %>" class="text-body">
+						<%= raw footer[:product][:name] %>
+						<%= image_tag(assets[:logo_path], class: 'pl-1 logo grow') %>
+					</a>
 				</h3>
 
 				<p class="text-secondary mt-2 mb-0">

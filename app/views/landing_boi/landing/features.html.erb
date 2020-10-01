@@ -1,0 +1,25 @@
+<main class="container index">
+	
+	<div class="row">
+
+		<div class="<%= css[:col_class] %>">
+			
+			<%= render 'landing_boi/landing/features/hero' %>
+
+			<%= render 'screenshot' %>
+
+			<%= render 'features', all_features: 'true' %>
+
+			<%= render 'landing_boi/landing/features/social_proof' %>
+
+			<%= render 'landing_boi/landing/features/final_blurb' %>
+
+			<div class="my-5">
+				<%= render 'signup_buttons' %>
+			</div>
+
+		</div>
+
+	</div>
+
+</main>

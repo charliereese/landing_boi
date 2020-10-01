@@ -40,16 +40,22 @@
 		height: 25px;
 	}
 
-	footer img.logo {
-		position: relative;
-		height: 16px;
-		top: -4px;
-	}
+	footer {
+		img.logo {
+			position: relative;
+			height: 16px;
+			top: -4px;
+		}
 
-	footer div.bg-light {
-		content: "";
-		height: 5px;
-		display: block;
+		h3 a:hover {
+			text-decoration: none;
+		}
+
+		div.bg-light {
+			content: "";
+			height: 5px;
+			display: block;
+		}
 	}
 
 }

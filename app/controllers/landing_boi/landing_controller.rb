@@ -6,5 +6,8 @@ module LandingBoi
 
 		def index
 		end
+
+		def features
+		end
 	end
 end

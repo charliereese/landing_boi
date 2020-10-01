@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount LandingBoi::Engine => "/landing_boi"
+	mount LandingBoi::Engine => "/"
 end

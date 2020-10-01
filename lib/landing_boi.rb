@@ -12,8 +12,17 @@ module LandingBoi
 	self.urls = {
 		sign_in: '/sign-in',
 		get_started: '/get-started',
+		support: 'mailto:support@yourcompany.com',
 		demo: '/demo',
 		logo: '/',
+		features: '/features',
+		pricing: '/pricing',
+		about: '/about',
+		blog: '/blog',
+		twitter: 'https://twitter.com/charlieinthe6',
+		terms: '/terms',
+		privacy: '/privacy',
+		podcast: 'https://charliereese.ca/devpreneur-podcast',
 	}
 
 	self.css = {
@@ -28,6 +37,21 @@ module LandingBoi
 				title: "Start DOING ACTION today, for free",
 				text: "PRODUCT_NAME is <mark>ATTR yet ATTR</mark> SELLING FEATURE. Our <a href='/pricing' class='text-secondary'><u>pricing</u></a> starts at $X/month for USAGE, and you can cancel anytime.",
 			},
+			social_proof: {
+				title: "PRODUCT is trusted by PEOPLE / BUSINESSES to power their FEATURE",
+				p: "We’re also used by GROUP A, GROUP B, and GROUP C, who trust our software to provide them with an ATTR and ATTR alternative to PRODUCT.",
+			}
+		},
+		features_page: {
+			h1: 'PRODUCT FEATURE, no training required',
+			h1_subtitle: "SOLVE PROBLEM from a single, simple dashboard. There's no setup, and help is <a href='#{urls[:support]}'>an email away</a>.",
+			social_proof: {
+				title: "PRODUCT has the best customers. What they're saying:",
+			},
+			final_blurb: {
+				title: "PRODUCT is XYZ. You'll love it.",
+				p: "PRODUCT is a ATTR yet ATTR KEY FEATURE. It shows you XYZ on a single screen, without ABC. Pricing starts at $TBU/month, and you can cancel anytime. Check out our pricing and get started with a <a href='#{urls[:get_started]}'>free trial</a>",
+			}
 		},
 		buttons: {
 			get_started: 'Get started for free',
@@ -46,6 +70,23 @@ module LandingBoi
 			},
 			{
 				title: 'Feature C',
+				text: "Our FEATURE gives you what you want: XYZ NEED, ABC need, and OTHER NEED. She sells sea shells by the sea shore, so that you can buy them by the sea shore.",
+				img_path: 'landing_boi/logo.svg',
+			},
+		],
+		features_secondary: [
+			{
+				title: 'Secondary feature',
+				text: "Our FEATURE gives you what you want: XYZ NEED, ABC need, and OTHER NEED. She sells sea shells by the sea shore, so that you can buy them by the sea shore.",
+				img_path: 'landing_boi/logo.svg',
+			},
+			{
+				title: 'Secondary feature 2',
+				text: "Our FEATURE gives you what you want: XYZ NEED, ABC need, and OTHER NEED. She sells sea shells by the sea shore, so that you can buy them by the sea shore.",
+				img_path: 'landing_boi/logo.svg',
+			},
+			{
+				title: 'Secondary feature 3',
 				text: "Our FEATURE gives you what you want: XYZ NEED, ABC need, and OTHER NEED. She sells sea shells by the sea shore, so that you can buy them by the sea shore.",
 				img_path: 'landing_boi/logo.svg',
 			},
@@ -90,27 +131,27 @@ module LandingBoi
 	self.footer = {
 		product: {
 			name: "Landing Page Generator",
-			plug: "We’ve generated 1000+ landing pages for our users so far.",
+			plug: "We’ve generated +10 million trillion landing pages for our users so far.",
 			company: "Bootstrapper Inc.",
 		},
 		links: {
 			product: {
-				features: '/features',
-				pricing: '/pricing',
+				features: urls[:features],
+				pricing: urls[:pricing],
 				demo: urls[:demo],
 				"free trial": urls[:get_started],
 			}, 
 			company: {
-				about: '/about',
-				blog: '/blog',
-				support: '/support',
-				twitter: 'https://twitter.com/charlieinthe6',
+				about: urls[:about],
+				blog: urls[:blog],
+				support: urls[:support],
+				twitter: urls[:twitter],
 			},
 			resources: {
 				login: urls[:sign_in],
-				terms: '/terms',
-				privacy: '/privacy',
-				podcast: 'https://charliereese.ca/devpreneur-podcast',
+				terms: urls[:terms],
+				privacy: urls[:privacy],
+				podcast: urls[:podcast],
 			},
 		}
 	}

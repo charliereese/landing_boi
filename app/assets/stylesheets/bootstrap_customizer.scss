@@ -1,2 +1,6 @@
 @import 'landing_boi/bootstrap_overrides';
 @import "bootstrap";
+
+.text-body {
+	color: $body-color !important;
+}
