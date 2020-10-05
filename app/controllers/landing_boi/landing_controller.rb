@@ -9,5 +9,8 @@ module LandingBoi
 
 		def features
 		end
+    
+    def pricing
+    end
 	end
 end

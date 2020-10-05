@@ -30,6 +30,10 @@ module LandingBoi
 	}
 
 	self.text = {
+    pricing: {
+      h1: "Simple pricing for all",
+      h1_subtitle: "DOING FEATURE is easier with PRODUCT. <a href='#{urls[:get_started]}'>Try it for 30 days for free</a> and see for yourself!",
+    },
 		index: {
 			h1: 'Your PRODUCT FEATURE should be ATTR, ATTR, and ATTR',
 			h1_subtitle: "THING is an ATTR, ATTR, ATTR alternative to OTHER PRODUCT. So STOP DOING ABC and XYZ, which you probably don't need. Our PRODUCT FEATURE does ACTION so you can MAKE MORE MONEY / SAVE TIME / ACHIEVE SOMETHING.",
