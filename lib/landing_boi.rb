@@ -1,12 +1,17 @@
 require "landing_boi/engine"
 
 module LandingBoi
-	mattr_accessor :assets, :urls, :css, :text, :footer
+	mattr_accessor :assets, :urls, :css, :text, :footer, :plans
 
 	self.assets = {
 		logo_path: 'landing_boi/logo.svg',
 		screenshot_path: 'landing_boi/screenshot.png',
 		pricing_img_path: 'landing_boi/logo.svg',
+    plans: [
+      'landing_boi/logo.svg',
+      'landing_boi/logo.svg',
+      'landing_boi/logo.svg',
+    ],
 	}
 	
 	self.urls = {
@@ -30,9 +35,57 @@ module LandingBoi
 	}
 
 	self.text = {
+    about: {
+      h1: "About PRODUCT",
+      h1_subtitle: "PRODUCT provides ATTR, ATTR, FEATURE to our fantastic customers. We've been creating and supporting great software products like PRODUCT for several years now, and we have no plans to stop.",
+      sections: [
+        {
+          h3: "Self-funded and independent",
+          ps: [
+            "TBU",
+            "TBU",
+          ],
+        },
+        {
+          h3: "Simple by design",
+          ps: [
+            "TBU",
+            "TBU",
+          ],
+        },
+        {
+          h3: "Small and proud",
+          ps: [
+            "TBU",
+            "TBU",
+          ],
+        },
+        {
+          h3: "Questions?",
+          ps: [
+            "TBU",
+          ],
+        },
+
+      ], 
+    },
     pricing: {
       h1: "Simple pricing for all",
-      h1_subtitle: "DOING FEATURE is easier with PRODUCT. <a href='#{urls[:get_started]}'>Try it for 30 days for free</a> and see for yourself!",
+      h1_subtitle: "DOING FEATURE is easier with PRODUCT. <a href='#{urls[:get_started]}'>Try it for 7 days for free</a> and see for yourself!",
+      notes: [
+        "Note: all pricing is in USD",
+        "Need a bigger plan? <a href='#{urls[:support]}'>Contact us</a>.",
+      ],
+      social_proof: {
+        title: 'What our wonderful customers are saying about us:',
+      },
+      assurance: {
+        title: "Included on every plan",
+        paragraphs: [
+          "Enthusiastic email support, no suprise charges, and no long-term contracts - cancel anytime!",
+          "Have a question? We are just <a href='#{urls[:support]}'>an email away</a>.", 
+        ],
+      },
     },
 		index: {
 			h1: 'Your PRODUCT FEATURE should be ATTR, ATTR, and ATTR',
@@ -131,6 +184,31 @@ module LandingBoi
 			},
 		],
 	}
+  
+  self.plans = [
+    {
+      title: 'Solo-preneur',
+      image: assets[:plans][0],
+      price: '$19',
+      freq: 'month',
+      description: '100 texts / month<br />Unlimited users',
+    }, 
+    {
+      title: 'Small business',
+      image: assets[:plans][1],
+      price: '$39',
+      freq: 'month',
+      description: '300 texts / month<br />Unlimited users',
+
+    },
+    {
+      title: 'Enterprise',
+      image: assets[:plans][2],
+      price: '$99',
+      freq: 'month',
+      description: '1000 texts / month<br />Unlimited users',
+    },
+  ]
 
 	self.footer = {
 		product: {

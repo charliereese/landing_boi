@@ -1,61 +1,59 @@
 .landing-boi {
 
-	.index {
-		.h1 {
-			font-weight: 900;
-		}
-		.h5, .h3 {
-			font-weight: 700;
-		}
+  .h1 {
+    font-weight: 900;
+  }
+  .h5, .h3 {
+    font-weight: 700;
+  }
 
-		.features, .pricing-blurb {
-			img {
-				max-height: 130px;
-				max-width: 110px;
-			}
-		}
+  .plan, .features, .pricing-blurb {
+    img {
+      max-height: 130px;
+      max-width: 110px;
+    }
+  }
 
-		.social-proof {
+  .social-proof {
 
-			.recommendations {
-				p {
-					font-size: 18px;
-					font-style: italic;
-				}
+    .recommendations {
+      p {
+        font-size: 18px;
+        font-style: italic;
+      }
 
-				img {
-					max-height: 40px;
-				}
+      img {
+        max-height: 40px;
+      }
 
-				a:hover {
-					text-decoration: none;
-				}
-			}
-			
-		}
+      a:hover {
+        text-decoration: none;
+      }
+    }
+    
+  }
 
-	}
 
-	img.logo {
-		height: 25px;
-	}
+  img.logo {
+    height: 25px;
+  }
 
-	footer {
-		img.logo {
-			position: relative;
-			height: 16px;
-			top: -4px;
-		}
+  footer {
+    img.logo {
+      position: relative;
+      height: 16px;
+      top: -4px;
+    }
 
-		h3 a:hover {
-			text-decoration: none;
-		}
+    h3 a:hover {
+      text-decoration: none;
+    }
 
-		div.bg-light {
-			content: "";
-			height: 5px;
-			display: block;
-		}
-	}
+    div.bg-light {
+      content: "";
+      height: 5px;
+      display: block;
+    }
+  }
 
 }

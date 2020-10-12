@@ -12,5 +12,8 @@ module LandingBoi
     
     def pricing
     end
+    
+    def about
+    end
 	end
 end

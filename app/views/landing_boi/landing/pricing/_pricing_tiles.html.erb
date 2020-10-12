@@ -1,0 +1,28 @@
+<% plans.each do |plan| 
+  %><div class="plan col-12 col-md-4 mx-auto pl-0 pr-3 pr-xl-4 mt-5 d-inline-block">
+ 
+    <div class="shadow text-center grow pb-4">
+ 
+      <h5 class="bg-light p-3 rounded text-inter mb-0">
+        <%= raw plan[:title] %>
+      </h5>
+
+      <%= image_tag plan[:image], class: 'mt-4' %>
+
+      <h4 class="mt-4 text-inter mb-0">
+        <%= raw plan[:price] %> / <%= raw plan[:freq] %>
+      </h4> 
+
+      <p class="mt-4 mb-0 text-secondary">
+       <%= raw plan[:description] %> 
+      </p>
+
+      <a href="<%= urls[:get_started] %>" class="btn btn-primary mt-4 py-2_5 px-4 d-inline-block d-md-inline-block">
+        <%= text[:buttons][:get_started] %>
+      </a>
+
+    </div>
+
+  </div
+><% end %>
+
