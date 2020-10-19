@@ -1,9 +1,6 @@
 # LandingBoi
 Rails landing page generator for micro-SaaS apps
 
-## Usage
-[TBU]
-
 ## Installation
 Add this line to your application's Gemfile:
 
@@ -21,9 +18,18 @@ Or install it yourself as:
 $ gem install landing_boi
 ```
 
-## Configuration Options (e.g. titles / text, logo path, URL paths, etc.)
+Then add to your config/routes.rb file:
+```
+mount LandingBoi::Engine => "/"
+```
 
-See `lib/landing_boi` for configuration options.
+## Configuration Options (i.e. customizing views, titles / text, logo path, URL paths, etc.)
+
+Generate initializer for customizing product name / features, titles, text, URLS, photos, etc. on engine landing pages:
+
+```
+rails generate landing_boi:config
+```
 
 ## Custom Styles / Bootstrap Overrides
 
@@ -32,7 +38,9 @@ Customize scss colour scheme by creating `stylesheets/bootstrap_customizer.scss`
 See example in `test/dummy/app/assets/stylesheets`.
 
 ## Contributing
+
 If you'd like to make a fix / change, please create a pull request; when I have a moment, I'll have a look!
 
 ## License
+
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

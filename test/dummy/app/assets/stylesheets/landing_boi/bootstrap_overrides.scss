@@ -1,12 +1,16 @@
-$theme-colors: (
-	"msg": #309CFA,
-	"orange": #F5A623,
-	"primary-light": #dbccf5,
-	"primary": #6610F2,
-	"info": #f1f8ff,
-	"light": #edf2f7,
-	"dark": #24292e,
-	"warning": #E0B627,
+
+$theme-colors: map-merge(
+  (
+    "msg": #309CFA,
+    "orange": #F5A623,
+    "primary-light": #dbccf5,
+    "primary": #6610F2,
+    "info": #f1f8ff,
+    "light": #edf2f7,
+    "dark": #24292e,
+    "warning": #E0B627,
+  ),
+  $theme-colors
 );
 
 // Default link colour

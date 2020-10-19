@@ -1,5 +1,3 @@
-require "landing_boi/engine"
-
 # START CONFIG
 module LandingBoi
 	mattr_accessor :assets, :urls, :css, :text, :footer, :plans, :startup, :features, :features_secondary, :recommendations, :faqs
@@ -33,7 +31,7 @@ module LandingBoi
   
   self.startup = {
     founders: ['Jackie Chan'],
-    product: 'Pied Piper',
+    product: 'Wide Diaper',
     attributes: ["simple", "reliable", "effective"],
     legal_entity: 'Shell Company Inc.',
     feature: 'file compression',
