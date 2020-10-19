@@ -1,4 +1,3 @@
-
 $theme-colors: map-merge(
   (
     "msg": #309CFA,
@@ -15,6 +14,7 @@ $theme-colors: map-merge(
 
 // Default link colour
 $link-color: map-get($theme-colors, 'primary');
+$link-decoration: none;
 
 // Default font
 $font-family-sans-serif: 'Roboto';

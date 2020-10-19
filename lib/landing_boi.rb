@@ -29,6 +29,7 @@ module LandingBoi
 		terms: '/terms',
 		privacy: '/privacy',
 		podcast: 'https://charliereese.ca/devpreneur-podcast',
+    website_root: 'https://product-domain.com',
 	}
   
   self.startup = {
@@ -43,6 +44,8 @@ module LandingBoi
     benefits: ['save bandwidth', 'access your files immediately on any device'],
     primary_customer: 'small businesses',
     other_customers: ['developers', 'teachers', 'enterprises'], 
+    effective_date: '18 October, 2020',
+    location: 'Ontario, Canada',
   }
 
   self.features = [

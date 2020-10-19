@@ -25,10 +25,15 @@ mount LandingBoi::Engine => "/"
 
 ## Configuration Options (i.e. customizing views, titles / text, logo path, URL paths, etc.)
 
-Generate initializer for customizing product name / features, titles, text, URLS, photos, etc. on engine landing pages:
+Generate LandingBoi initializer file for customizing product name / features, titles, text, URLS, photos, etc. used for landing pages:
 
 ```
 rails generate landing_boi:config
+```
+
+Copy LandingBoi views into main application for customizing html pages:
+```
+rails generate landing_boi:views
 ```
 
 ## Custom Styles / Bootstrap Overrides
